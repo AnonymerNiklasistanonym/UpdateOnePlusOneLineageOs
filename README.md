@@ -19,9 +19,9 @@ In that case you can just restore app data and the operating system from this ba
 
 1. Select `Backup`
 2. Check the following boxes:
+   - `Boot`
    - `System`
-   - `Data`
-   - `XYZ`
+   - `Data` (excluding the *storage* - this means that the internal storage where your pictures, music and downloads are located is not backed up, only the LineageOS system and the app data of installed apps)
 3. Swipe `Swipe to Backup`
 
 | 1. | 2. and 3. |
