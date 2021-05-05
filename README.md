@@ -55,17 +55,13 @@ The following steps will remove the old operating system so be careful and sure 
 7. Swipe `Swipe to Wipe`
 8. Click `Reboot System`
 
-| 1. | 2. | 3. (Part 1) | 3. (Part 1) |
+| 1. | 2. | 3. (Part 1) | 3. (Part 2) |
 | --- | --- | --- | --- |
 | ![](res/twrp_home.png)| ![](res/twrp_install_zip.png)| ![](res/twrp_install_zip_lineageos.png)| ![](res/twrp_install_zip_lineageos_finished.png)|
 
-| 4. (Part 1) | 4. (Part 1) | 3. (Part 1) | 4. |
+| 4. | 5. (Part 1) | 5. (Part 2) and 6. | 7. |
 | --- | --- | --- | --- |
-| ![](res/twrp_install_zip_google_apps.png)| ![](res/twrp_install_zip_google_apps_finished.png)|  ![](res/twrp_install_zip_lineageos_finished.png)| ![](res/twrp_install_zip.png)|
-
-| 5. (Part 1) | 5. (Part 2) and 6. | 7. | 8. |
-| --- | --- | --- | --- |
-| ![](res/twrp_install_zip_google_apps.png)| ![](res/twrp_install_zip_lineageos_finished.png)| ![](res/twrp_install_zip_finished_wipe_cache.png)| ![](res/twrp_install_zip_lineageos_finished.png)|
+| ![](res/twrp_install_zip.png)| ![](res/twrp_install_zip_google_apps.png)|  ![](res/twrp_install_zip_google_apps_finished.png)| ![](res/twrp_install_zip_finished_wipe_cache.png)|
 
 ## Bonus: TWRP restore backup
 
