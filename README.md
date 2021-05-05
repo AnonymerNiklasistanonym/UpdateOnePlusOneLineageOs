@@ -26,7 +26,7 @@ In that case you can just restore app data and the operating system from this ba
 
 | 1. | 2. and 3. |
 | --- | --- |
-| ![](res/twrp_home.png){ width=20% } | ![](res/twrp_backup.png){ width=20% } |
+| ![](res/twrp_home.png)| ![](res/twrp_backup.png)|
 
 ## 3. Removing the old operating system
 
@@ -42,7 +42,7 @@ The following steps will remove the old operating system so be careful and sure 
 
 | 1. | 2. | 3. and 4. |
 | --- | --- | --- |
-| ![](res/twrp_home.png){ width=20% } | ![](res/twrp_wipe.png){ width=20% } | ![](res/twrp_wipe_dialog.png){ width=20% } |
+| ![](res/twrp_home.png)| ![](res/twrp_wipe.png)| ![](res/twrp_wipe_dialog.png)|
 
 ## 4. Install the new operating system (the new version of LineageOS)
 
@@ -57,15 +57,15 @@ The following steps will remove the old operating system so be careful and sure 
 
 | 1. | 2. | 3. (Part 1) | 3. (Part 1) |
 | --- | --- | --- | --- |
-| ![](res/twrp_home.png){ width=20% } | ![](res/twrp_install_zip.png){ width=20% } | ![](res/twrp_install_zip_lineageos.png){ width=20% } | ![](res/twrp_install_zip_lineageos_finished.png){ width=20% } |
+| ![](res/twrp_home.png)| ![](res/twrp_install_zip.png)| ![](res/twrp_install_zip_lineageos.png)| ![](res/twrp_install_zip_lineageos_finished.png)|
 
 | 4. (Part 1) | 4. (Part 1) | 3. (Part 1) | 4. |
 | --- | --- | --- | --- |
-| ![](res/twrp_install_zip_google_apps.png){ width=20% } | ![](res/twrp_install_zip_google_apps_finished.png){ width=20% } |  ![](res/twrp_install_zip_lineageos_finished.png){ width=20% } | ![](res/twrp_install_zip.png){ width=20% } |
+| ![](res/twrp_install_zip_google_apps.png)| ![](res/twrp_install_zip_google_apps_finished.png)|  ![](res/twrp_install_zip_lineageos_finished.png)| ![](res/twrp_install_zip.png)|
 
 | 5. (Part 1) | 5. (Part 2) and 6. | 7. | 8. |
 | --- | --- | --- | --- |
-| ![](res/twrp_install_zip_google_apps.png){ width=20% } | ![](res/twrp_install_zip_lineageos_finished.png){ width=20% } | ![](res/twrp_install_zip_finished_wipe_cache.png){ width=20% } | ![](res/twrp_install_zip_lineageos_finished.png){ width=20% } |
+| ![](res/twrp_install_zip_google_apps.png)| ![](res/twrp_install_zip_lineageos_finished.png)| ![](res/twrp_install_zip_finished_wipe_cache.png)| ![](res/twrp_install_zip_lineageos_finished.png)|
 
 ## Bonus: TWRP restore backup
 
@@ -79,7 +79,7 @@ The following steps will remove the old operating system so be careful and sure 
 
 | 1. | 2. and 3. | 4. |
 | --- | --- | --- |
-| ![](res/twrp_home.png){ width=20% } | ![](res/twrp_restore.png){ width=20% } |![](res/twrp_restore_dialog.png){ width=20% } |
+| ![](res/twrp_home.png)| ![](res/twrp_restore.png)|![](res/twrp_restore_dialog.png)|
 
 ## Bonus: TWRP recovery
 
@@ -142,7 +142,7 @@ Source: [*How To Update TWRP Recovery With TWRP Recovery!* by *KTNTECH*](https:/
 
 | 3. | 4. | 5. | 6. |
 | --- | --- | --- | --- |
-| ![](res/twrp_home.png){ width=20% } | ![](res/twrp_install_zip.png){ width=20% } | ![](res/twrp_install_image.png){ width=20% } | ![](res/twrp_install_image_recovery.png){ width=20% } |
+| ![](res/twrp_home.png)| ![](res/twrp_install_zip.png)| ![](res/twrp_install_image.png)| ![](res/twrp_install_image_recovery.png)|
 
 **TODO:**
 
