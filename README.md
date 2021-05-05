@@ -147,3 +147,4 @@ Source: [*How To Update TWRP Recovery With TWRP Recovery!* by *KTNTECH*](https:/
 **TODO:**
 
 Currently this is not working any more, after somehow the installation of LineageOS 18.1 overwrote the recovery which replaces TWRP each time the device boots into LineageOS.
+For further information read the previous section *Install TWRP recovery*.
