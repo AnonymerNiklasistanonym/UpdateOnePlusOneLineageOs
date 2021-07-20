@@ -5,7 +5,11 @@ The following guide contains the steps on how to update a OnePlus One device to 
 - TWRP is installed
 - LineageOS is installed
 
-## 1. Downloading the latest ROM zip file and Google app zip file
+**Disclaimer:**
+All these instructions were found on the internet and could result in your device having multiple problems like data loss or a permanent bootloop.
+This is not an official guide - just instructions that worked when upgrading to LineageOS 18 for the author.
+
+## 1. Download the latest ROM zip file and Google app zip file
 
 1. Go to the [official LineageOS download page](https://download.lineageos.org/bacon) and download the `lineage-XX.X-YYYYYYYY-nightly-bacon-signed.zip` file to your internal storage
    - At the moment this is `lineage-18.1-20210429-nightly-bacon-signed.zip`
@@ -28,7 +32,7 @@ In that case you can just restore app data and the operating system from this ba
 | --- | --- |
 | ![](res/twrp_home.png)| ![](res/twrp_backup.png)|
 
-## 3. Removing the old operating system
+## 3. Remove the old operating system
 
 The following steps will remove the old operating system so be careful and sure that you have a backup of your current working operating system!
 
