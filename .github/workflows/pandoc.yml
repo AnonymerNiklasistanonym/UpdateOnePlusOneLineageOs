@@ -1,0 +1,61 @@
+name: Pandoc CI CD
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [ main, dev ]
+  pull_request:
+    branches: [ main, dev ]
+
+  # Allows to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    # Install general dependencies and a current version of pandoc via a tarball because the latest ubuntu LTS still only has version 2.5
+    - name: Install necessary dependencies
+      run: |
+        wget -nc -O pandoc-2.14.1-linux-amd64.tar.gz "https://github.com/jgm/pandoc/releases/download/2.14.1/pandoc-2.14.1-linux-amd64.tar.gz" || true
+        sudo tar xvzf pandoc-2.14.1-linux-amd64.tar.gz -C /usr/local/ --strip-components=1
+        sudo apt install texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-recommended
+    - name: Build with Pandoc the HTML and PDF file (via Makefile)
+      run: make html pdf
+    # This is used to share all created "binary" files between the separated jobs
+    - name: Temporarily save created "binary" files
+      uses: actions/upload-artifact@v2
+      with:
+        name: binary-artifacts
+        path: |
+          UpdateOnePlusOneLineageOS.html
+          UpdateOnePlusOneLineageOS.pdf
+        retention-days: 7
+
+  deploy:
+    needs:
+    - build
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Retrieve temporarily saved "binary" files from the build job
+      uses: actions/download-artifact@v2
+      with:
+        name: binary-artifacts
+        path: ./bin/
+    - name: Rename HTML file
+      run: mv ./bin/UpdateOnePlusOneLineageOS.html ./bin/index.html
+    - name: Deploy to GitHub Pages
+      # Only deploy the website when pushing on the main branch
+      if: github.ref == 'refs/heads/main'
+      uses: crazy-max/ghaction-github-pages@v2
+      with:
+        target_branch: gh-pages
+        build_dir: ./bin
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

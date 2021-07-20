@@ -8,7 +8,7 @@ OUTPUT_BASENAME=UpdateOnePlusOneLineageOS
 # Pandoc general command options
 PANDOC_OPTIONS=--from markdown$(subst $(SPACE),,$(PANDOC_EXTENSIONS)) \
                --metadata title="Update OnePlus One LineageOs" \
-               --metadata date=$(shell date --reference=$(SOURCE_FILE) +"%Y.%m.%d") --shift-heading-level-by=0
+               --metadata date=$(shell date --reference=$(SOURCE_FILE) +"%Y.%m.%d")
 # Pandoc command options for PDF export
 PANDOC_OPTIONS_PDF=-V geometry:a4paper \
                    -V geometry:margin=2cm \
