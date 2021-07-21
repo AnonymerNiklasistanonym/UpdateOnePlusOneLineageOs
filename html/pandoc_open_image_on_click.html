@@ -31,17 +31,5 @@ img {
             return false
         })
     }
-
-    // Add download PDF button
-    const toc = document.getElementById("TOC")
-    const brTag = document.createElement("br")
-    toc.appendChild(brTag)
-    const downloadButton = document.createElement("a")
-    toc.appendChild(downloadButton)
-    downloadButton.href = "UpdateOnePlusOneLineageOS.pdf"
-    downloadButton.download = "UpdateOnePlusOneLineageOS.pdf"
-    downloadButton.target = "_blank"
-    downloadButton.classList.add("btn")
-    downloadButton.text = "Download PDF version"
 })
 </script>

@@ -24,16 +24,14 @@ jobs:
         wget -nc -O pandoc-2.14.1-linux-amd64.tar.gz "https://github.com/jgm/pandoc/releases/download/2.14.1/pandoc-2.14.1-linux-amd64.tar.gz" || true
         sudo tar xvzf pandoc-2.14.1-linux-amd64.tar.gz -C /usr/local/ --strip-components=1
         sudo apt install texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-fonts-recommended
-    - name: Build with Pandoc the HTML and PDF file (via Makefile)
-      run: make html pdf
+    - name: Build all possible files with pandoc (via Makefile)
+      run: make pdf html web_page
     # This is used to share all created "binary" files between the separated jobs
     - name: Temporarily save created "binary" files
       uses: actions/upload-artifact@v2
       with:
         name: binary-artifacts
-        path: |
-          UpdateOnePlusOneLineageOS.html
-          UpdateOnePlusOneLineageOS.pdf
+        path: ./bin
         retention-days: 7
 
   deploy:
@@ -47,9 +45,7 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: binary-artifacts
-        path: ./bin/
-    - name: Rename HTML file
-      run: mv ./bin/UpdateOnePlusOneLineageOS.html ./bin/index.html
+        path: ./bin
     - name: Deploy to GitHub Pages
       # Only deploy the website when pushing on the main branch
       if: github.ref == 'refs/heads/main'
